@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Detector",
+  "version": "1.0",
+  "description": "Shows a green checkbox when you're on LinkedIn",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://linkedin.com/*",
+    "*://www.linkedin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://linkedin.com/*", "*://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "LinkedIn Detector"
+  }
+}
