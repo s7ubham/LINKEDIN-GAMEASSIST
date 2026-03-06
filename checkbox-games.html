@@ -1,0 +1,53 @@
+<div style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: 2px solid #0A66C2;
+  border-radius: 8px;
+  padding: 15px 20px;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  width: auto;
+  min-width: 200px;
+">
+  <div style="font-size: 28px; margin-bottom: 10px;">🎮</div>
+  <div style="
+    font-size: 12px;
+    color: #0A66C2;
+    font-weight: bold;
+    margin-bottom: 12px;
+  ">Assist Mode</div>
+  
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <span style="font-size: 12px; color: #333;">Off</span>
+    <label style="position: relative; display: inline-block; width: 50px; height: 26px;">
+      <input type="checkbox" id="assist-toggle" style="opacity: 0; width: 0; height: 0;">
+      <span style="
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 26px;
+      " id="toggle-slider"></span>
+      <span style="
+        position: absolute;
+        cursor: pointer;
+        top: 2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      " id="toggle-knob"></span>
+    </label>
+    <span style="font-size: 12px; color: #333;">On</span>
+  </div>
+</div>

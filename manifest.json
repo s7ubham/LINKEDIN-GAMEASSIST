@@ -11,10 +11,19 @@
     "*://linkedin.com/*",
     "*://www.linkedin.com/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["*://linkedin.com/*", "*://www.linkedin.com/*"],
       "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["prompt.html", "checkbox.html", "checkbox-games.html"],
+      "matches": ["*://linkedin.com/*", "*://www.linkedin.com/*"]
     }
   ],
   "action": {
