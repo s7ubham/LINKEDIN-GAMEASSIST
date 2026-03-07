@@ -22,7 +22,17 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["prompt.html", "checkbox.html", "checkbox-games.html"],
+      "resources": [
+        "prompt.html",
+        "checkbox.html",
+        "checkbox-games.html",
+        "games/zip.js",
+        "games/mini-sudoku.js",
+        "games/tango.js",
+        "games/queens.js",
+        "games/pinpoint.js",
+        "games/crossclimb.js"
+      ],
       "matches": ["*://linkedin.com/*", "*://www.linkedin.com/*"]
     }
   ],
